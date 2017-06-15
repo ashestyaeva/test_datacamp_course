@@ -38,13 +38,14 @@ qplot(rnorm(100))
 
 *** =sct
 ```{r}
-bad_arg_message <- "У функции qplot должен быть другой аргумент"
+bad_arg_message <- "У функции qplot должен быть подходящий аргумент"
 no_arg_message <- "У функции qplot должен быть аргумент"
 no_fun_message <- "Функцию qplot использовал?"
-test_function("qplot", args = "rnorm(100)",
+test_function("qplot", args = "x",
               not_called_msg = no_fun_message,
-              index = 1,
-              args_not_specified = no_arg_message,
               incorrect_msg = bad_arg_message)
+test_function("rnorm", args = "n",
+              not_called_msg = "Функцию rnorm неплохо бы позвать",
+              incorrect_msg = "А ещё у функции rnorm нужно указать правильный аргумент")
 success_msg("Ты крутой перец!!!")
 ```
