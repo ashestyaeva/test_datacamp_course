@@ -26,20 +26,26 @@ library(ggplot2)
 
 *** =sample_code
 ```{r}
+# это волшебное заклинание не трогай!
 set.seed(42)
 # Кодь туточки
+numbers <- rnorm(...)
+qplot(...)
 
 ```
 
 *** =solution
 ```{r}
 set.seed(42)
-qplot(rnorm(100))
+# Кодь туточки
+numbers <- rnorm(100)
+qplot(numbers)
 
 ```
 
 *** =sct
 ```{r}
+set.seed(42)
 bad_arg_message <- "У функции qplot должен быть подходящий аргумент"
 no_arg_message <- "У функции qplot должен быть аргумент"
 no_fun_message <- "Функцию qplot использовал?"
