@@ -3,3 +3,7 @@ description      : Заодно протестируем кириллицу ве
 university       : Супер-Универ
 difficulty_level : 2
 time_needed      : 10 минут
+instructors:
+  - boris.demeshev@gmail.com
+collaborators:
+  - roah@yandex.ru
