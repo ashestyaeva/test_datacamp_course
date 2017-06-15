@@ -26,12 +26,14 @@ library(ggplot2)
 
 *** =sample_code
 ```{r}
-# Кодь туточки!
+set.seed(42)
+# Кодь туточки
 
 ```
 
 *** =solution
 ```{r}
+set.seed(42)
 qplot(rnorm(100))
 
 ```
